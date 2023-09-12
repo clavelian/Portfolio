@@ -7,20 +7,26 @@
     <link rel="icon" type="image/x-icon" href="/dist/favicon(1).ico">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
     <link rel="stylesheet" href="output.css">
+    <!--Ionicon-->
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
-    <script src="script.js" defer></script>
+    <!--AOS-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+    <link rel='stylesheet' href='https://unpkg.com/aos@2.3.0/dist/aos.css' defer><link rel="stylesheet" href="style.css">
+    <script src='https://unpkg.com/aos@2.3.0/dist/aos.js' defer></script><script  src="main.js"></script>
+    <script src="AOS.js" defer></script>
+
 </head>
 <body class=" bg-black text-white">
-  <header class="flex justify-between items-center laptop:mx-48 laptop:pt-24 tablet:px-12 tablet:pt-16 mobile:pt-8 mobile pl-5 ">
-      <code><h1 class="text-2xl"><a href="main.html"><strong class="text-red-600">&ltClavel</strong><strong>ian&gt</strong></a></h1></code>
+  <header class="flex justify-between items-center laptop:mx-48 laptop:pt-24 tablet:px-12 tablet:pt-16 mobile:pt-8 mobile pl-5">
+      <code><h1 class="text-2xl"><a href="main.html"><strong class="text-red-600 material-symbols-outlined">&ltClavel</strong><strong class="material-symbols-outlined text-5xl">ian&gt</strong></a></h1></code>
   <!--navbar-->
       <nav class="flex justify-between items-center">
-      <ul class="flex justify-between items-center mobile:space-y-7 gap-6">
-        <li class="mobile:hidden hover:bg-red-600 transition-colors duration-200 py-1 px-2 rounded-lg tablet:hover:text-white font-bold hover:text-white"><a href="#about"">About</a></li>
-        <li class="mobile:hidden hover:bg-red-600 transition-colors duration-200 py-1 px-2 rounded-lg tablet:hover:text-white font-bold hover:text-white"><a href="#">Projects</a></li>
-        <li class="mobile:hidden hover:bg-red-600 transition-colors duration-200 py-1 px-2 rounded-lg tablet:hover:text-white font-bold hover:text-white"><a href="#">Contact</a></li>
+      <ul class="flex justify-between items-center mobile:space-y-2 gap-6">
+        <li class="mobile:hidden laptop:text-xs material-symbols-outlined hover:bg-red-600 transition-colors duration-200 py-1 px-2 rounded-lg tablet:hover:text-white font-bold hover:text-white hover:animate-bounce"><a href="#about"">About</a></li>
+        <li class="mobile:hidden laptop:text-xs material-symbols-outlined hover:bg-red-600 transition-colors duration-200 py-1 px-2 rounded-lg tablet:hover:text-white font-bold hover:text-white hover:animate-bounce"><a href="#">Projects</a></li>
+        <li class="mobile:hidden laptop:text-xs material-symbols-outlined hover:bg-red-600 transition-colors duration-200 py-1 px-2 rounded-lg tablet:hover:text-white font-bold hover:text-white hover:animate-bounce"><a href="#">Contact</a></li>
         <span class="text-2xl laptop:hidden tablet:hidden"><ion-icon name="grid-outline"></ion-icon></span>
         </label>
         </span>
@@ -32,23 +38,71 @@
 <main class="laptop:mt-10 laptop:mx-56 tablet:pt-16 tablet:px-5">
 <!--main section-->
 <section class="flex items-center m-40">
-  <figure class="w-1/3 object-contain">
+  <figure class="laptop:flex-none laptop:w-1/3 object-contain">
     <img src="photo1.PNG" alt="photo">
   <!-- <img class="relative object-contain laptop:h-auto laptop:w-52 rounded-3xl shadow-md mobile:w-56" src="photo.PNG" alt="photo"> -->
   </figure>
     <!--about me section-->
-    <div class="w-2/3">
-    <p class="">Hello and welcome to my portfolio! I've embarked on an exciting journey from Desktop Support and Service Desk Engineering to becoming a Front-End Developer. I used to solve technical issues and assist users, but now I'm learning to create visually appealing and user-friendly websites. Join me as I showcase my progress and newfound skills in the world of web development. 
+    <div class="laptop:w-2/3 ">
+      <div class="flex justify-center">
+        <span class="material-symbols-outlined">
+          Kenneth Ian Clavel
+        </span>
+      </div>
+      <div class="flex justify-center">
+        <span class="material-symbols-outlined">
+          Front End Developer
+        </span>
+      </div>
     </p>
-      <div class="flex pt-3 items-center justify-center gap-4">
+      <div class="flex pt-3 items-center gap-4 justify-center">
       <a href="https://github.com/clavelian"><ion-icon name="logo-github" class="text-3xl"></ion-icon></a>
       <a href="https://www.linkedin.com/in/ian-clavel-b88844252/"><ion-icon name="logo-linkedin" class="text-3xl"></ion-icon></a>
       </div>
     </div>
 </section>
-<div class="py-20"></div>
-    <p class="tablet:hidden">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo cupiditate repudiandae saepe dolores expedita esse repellat cumque soluta aperiam earum nisi, quas labore a, inventore aliquid magni aspernatur explicabo delectus!</p>
+<div class="py-32"></div>
+  <section>
+    <strong class="text-3xl">About me</strong>
+    <div>
+    <p class="text-xl tablet:text-sm">Hello and welcome to my portfolio! I've embarked on an exciting journey from Desktop Support and Service Desk Engineering to becoming a Front-End Developer. I used to solve technical issues and assist users, but now I'm learning to create visually appealing and user-friendly websites. Join me as I showcase my progress and newfound skills in the world of web development.</p>
+    </div>
+    <strong class="text-3x1">Technology</strong>
+  <div class="flex justify-center space-x-11">
+<div><img src="/dist/logo/git.png" class="w-20 h-20 object-contain flex-nowrap"></div>
+<div><img src="/dist/logo/github.png" class="w-20 h-20 object-contain flex-nowrap"></div>
+<div><img src="/dist/logo/html.png" class="w-20 h-20 object-contain flex-nowrap"></div>
+<div><img src="/dist/logo/JS.png" class="w-20 h-20 object-contain flex-nowrap"></div>
+<div><img src="/dist/logo/react.png" class="w-20 h-20 object-contain "></div>
+<div><img src="/dist/logo/tailwind.svg" class="w-20 h-20 object-contain flex-nowrap"></div>
+  </div>
+  </section>    
+  
+  <div><strong class="text-4xl">Projects</strong></div>
+<section class="grid place-content-start">
+    <div class=" w-[200px] h-[200px] m-[50px] pt-[75px] bg-[#ccc] items-center text-[#fff] text-3xl" data-aos="fade-right">Project 1</div>
+    <div class=" w-[200px] h-[200px] m-[50px] pt-[75px] bg-[#ccc] items-center text-[#fff] text-sm" data-aos="fade-right">Project 2</div>
+    <div class="item w-[200px] h-[200px] m-[50px] pt-[75px] bg-[#ccc] items-center text-[#fff] text-sm" data-aos="fade-right">Project 3</div>
+    <div class="item w-[200px] h-[200px] m-[50px] pt-[75px] bg-[#ccc] items-center text-[#fff] text-sm" data-aos="fade-right">Project 4</div>
+</section>
 
+<section>
+  <div><strong class="text-4xl">Contact Me</strong></div>
+  <div><input type="text"></div>
+</section>
 </main>
+
+
+<!-- <section class="flex items-center w-1/2">
+  <div class="flex-none ">
+  <img src="photo1.PNG" alt="">
+  </div>
+  <div class="flex w-1/2 ">
+    <p class="p-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati est iusto perferendis et quaerat, eaque vel, sapiente deserunt beatae modi dolores animi, nulla suscipit temporibus iure dolore ut quis incidunt?</p>
+  </div>
+  </section> -->
+
+
+</div>
 </body>
 </html>
