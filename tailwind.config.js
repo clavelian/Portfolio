@@ -11,7 +11,12 @@ module.exports = {
       'laptop': {'min':'1024px','max':'2400px'},
       // => @media (min-width: laptop & desktop) { ... }
     },
-    extend: {},
+    extend: {
+      fontFamily:{
+        Mon: "'Montserrat', serif",
+        Outift: "'Outfit', serif",
+      }
+    },
   },
   plugins: [],
 }

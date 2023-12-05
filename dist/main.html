@@ -16,11 +16,16 @@
     <link rel='stylesheet' href='https://unpkg.com/aos@2.3.0/dist/aos.css' defer><link rel="stylesheet" href="style.css">
     <script src='https://unpkg.com/aos@2.3.0/dist/aos.js' defer></script><script  src="main.js"></script>
     <script src="AOS.js" defer></script>
+    <script src="dark.js" defer></script>
+    <!--font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;1,300&family=Outfit:wght@200;300&display=swap" rel="stylesheet">
 
 </head>
 <body class=" bg-black text-white">
   <header class="flex justify-between items-center laptop:mx-48 laptop:pt-24 tablet:px-12 tablet:pt-16 mobile:pt-8 mobile pl-5">
-      <code><h1 class="text-2xl"><a href="main.html"><strong class="text-red-600 material-symbols-outlined">&ltClavel</strong><strong class="material-symbols-outlined text-5xl">ian&gt</strong></a></h1></code>
+      <code><h1 class="text-2xl"><a href="main.html"><strong class="text-red-600 material-symbols-outlined">&ltClavel</strong><strong class="material-symbols-outlined text-2xl">ian&gt</strong></a></h1></code>
   <!--navbar-->
       <nav class="flex justify-between items-center">
       <ul class="flex justify-between items-center mobile:space-y-2 gap-6">
@@ -28,6 +33,8 @@
         <li class="mobile:hidden laptop:text-xs material-symbols-outlined hover:bg-red-600 transition-colors duration-200 py-1 px-2 rounded-lg tablet:hover:text-white font-bold hover:text-white hover:animate-bounce"><a href="#">Projects</a></li>
         <li class="mobile:hidden laptop:text-xs material-symbols-outlined hover:bg-red-600 transition-colors duration-200 py-1 px-2 rounded-lg tablet:hover:text-white font-bold hover:text-white hover:animate-bounce"><a href="#">Contact</a></li>
         <span class="text-2xl laptop:hidden tablet:hidden"><ion-icon name="grid-outline"></ion-icon></span>
+        <div id="light"><ion-icon name="sunny-outline" class="h-6 w-6"></ion-icon></div>
+        <div id="dark" class="hidden"><ion-icon name="moon-outline" class="h-6 w-6"></ion-icon></div>
         </label>
         </span>
       </ul>
@@ -46,12 +53,12 @@
     <div class="laptop:w-2/3 ">
       <div class="flex justify-center">
         <span class="material-symbols-outlined">
-          Kenneth Ian Clavel
+          Kenneth <span class="text-red-600">ian</span> Clavel
         </span>
       </div>
       <div class="flex justify-center">
-        <span class="material-symbols-outlined">
-          Front End Developer
+        <span class="material-symbols-outlined text-lg">
+          Front-End Developer
         </span>
       </div>
     </p>
@@ -63,14 +70,14 @@
 </section>
 <div class="py-32"></div>
   <section>
-    <strong class="text-3xl">About me</strong>
+    <strong class="text-lg material-symbols-outlined">About me</strong>
     <div>
-    <p class="text-xl tablet:text-sm">Hello and welcome to my portfolio! I've embarked on an exciting journey from Desktop Support and Service Desk Engineering to becoming a Front-End Developer. I used to solve technical issues and assist users, but now I'm learning to create visually appealing and user-friendly websites. Join me as I showcase my progress and newfound skills in the world of web development.</p>
+    <p class="text-xl tablet:text-sm font-Outift">Hello and welcome to my portfolio! I've embarked on an exciting journey from Desktop Support and Service Desk Engineering to becoming a Front-End Developer. I used to solve technical issues and assist users, but now I'm learning to create visually appealing and user-friendly websites. Join me as I showcase my progress and newfound skills in the world of web development.</p>
     </div>
-    <strong class="text-3x1">Technology</strong>
+    <strong class="text-lg material-symbols-outlined">Technology</strong>
   <div class="flex justify-center space-x-11">
-<div><img src="/dist/logo/git.png" class="w-20 h-20 object-contain flex-nowrap"></div>
-<div><img src="/dist/logo/github.png" class="w-20 h-20 object-contain flex-nowrap"></div>
+<div><img src="/dist/logo/git.png" class="w-20 h-20 object-contain flex-nowrap"><p class="text-center">GIT</p></div>
+<div><p class="text-center">Github</p><img src="/dist/logo/github.png" class="w-20 h-20 object-contain flex-nowrap"></div>
 <div><img src="/dist/logo/html.png" class="w-20 h-20 object-contain flex-nowrap"></div>
 <div><img src="/dist/logo/JS.png" class="w-20 h-20 object-contain flex-nowrap"></div>
 <div><img src="/dist/logo/react.png" class="w-20 h-20 object-contain "></div>
@@ -78,7 +85,7 @@
   </div>
   </section>    
   
-  <div><strong class="text-4xl">Projects</strong></div>
+  <div><strong class="text-lg material-symbols-outlined ">Projects</strong></div>
 <section class="grid place-content-start">
     <div class=" w-[200px] h-[200px] m-[50px] pt-[75px] bg-[#ccc] items-center text-[#fff] text-3xl" data-aos="fade-right">Project 1</div>
     <div class=" w-[200px] h-[200px] m-[50px] pt-[75px] bg-[#ccc] items-center text-[#fff] text-sm" data-aos="fade-right">Project 2</div>
@@ -86,9 +93,16 @@
     <div class="item w-[200px] h-[200px] m-[50px] pt-[75px] bg-[#ccc] items-center text-[#fff] text-sm" data-aos="fade-right">Project 4</div>
 </section>
 
+
+<div id="item1" class="hidden">Item 1 (Click to show)</div>
+<div id="item2">Item 2 (Click to hide)</div>
+<button onclick="toggleItems()">Toggle</button>
+
 <section>
-  <div><strong class="text-4xl">Contact Me</strong></div>
+  <div><strong class="text-lg material-symbols-outlined">Contact Me</strong></div>
   <div><input type="text"></div>
+
+
 </section>
 </main>
 
