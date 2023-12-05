@@ -17,13 +17,14 @@
     <script src='https://unpkg.com/aos@2.3.0/dist/aos.js' defer></script><script  src="main.js"></script>
     <script src="AOS.js" defer></script>
     <script src="dark.js" defer></script>
+    <script src="nightMode.js" ></script>
     <!--font-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;1,300&family=Outfit:wght@200;300&display=swap" rel="stylesheet">
 
-</head>
-<body class=" bg-black text-white">
+  </head>
+  <body id="body1" class="bg-black text-white">
   <header class="flex justify-between items-center laptop:mx-48 laptop:pt-24 tablet:px-12 tablet:pt-16 mobile:pt-8 mobile pl-5">
       <code><h1 class="text-2xl"><a href="main.html"><strong class="text-red-600 material-symbols-outlined">&ltClavel</strong><strong class="material-symbols-outlined text-2xl">ian&gt</strong></a></h1></code>
   <!--navbar-->
@@ -33,8 +34,10 @@
         <li class="mobile:hidden laptop:text-xs material-symbols-outlined hover:bg-red-600 transition-colors duration-200 py-1 px-2 rounded-lg tablet:hover:text-white font-bold hover:text-white hover:animate-bounce"><a href="#">Projects</a></li>
         <li class="mobile:hidden laptop:text-xs material-symbols-outlined hover:bg-red-600 transition-colors duration-200 py-1 px-2 rounded-lg tablet:hover:text-white font-bold hover:text-white hover:animate-bounce"><a href="#">Contact</a></li>
         <span class="text-2xl laptop:hidden tablet:hidden"><ion-icon name="grid-outline"></ion-icon></span>
-        <div id="light"><ion-icon name="sunny-outline" class="h-6 w-6"></ion-icon></div>
-        <div id="dark" class="hidden"><ion-icon name="moon-outline" class="h-6 w-6"></ion-icon></div>
+        <button onclick="toggleItems()">
+          <div id="item1"><ion-icon name="sunny-outline" class="h-6 w-6"></ion-icon></div>
+          <div id="item2" class="hidden"><ion-icon name="moon-outline" class="h-6 w-6"></ion-icon></div>
+          </button>
         </label>
         </span>
       </ul>
@@ -44,6 +47,8 @@
   <!--Body-->
 <main class="laptop:mt-10 laptop:mx-56 tablet:pt-16 tablet:px-5">
 <!--main section-->
+
+<div class="item" data-aos="zoom-out">
 <section class="flex items-center m-40">
   <figure class="laptop:flex-none laptop:w-1/3 object-contain">
     <img src="photo1.PNG" alt="photo">
@@ -67,36 +72,34 @@
       <a href="https://www.linkedin.com/in/ian-clavel-b88844252/"><ion-icon name="logo-linkedin" class="text-3xl"></ion-icon></a>
       </div>
     </div>
+  </div>
 </section>
 <div class="py-32"></div>
   <section>
-    <strong class="text-lg material-symbols-outlined">About me</strong>
-    <div>
-    <p class="text-xl tablet:text-sm font-Outift">Hello and welcome to my portfolio! I've embarked on an exciting journey from Desktop Support and Service Desk Engineering to becoming a Front-End Developer. I used to solve technical issues and assist users, but now I'm learning to create visually appealing and user-friendly websites. Join me as I showcase my progress and newfound skills in the world of web development.</p>
+   <strong class="text-lg material-symbols-outlined">About me</strong>
+    <div class="py-32">
+    <p class="text-xl tablet:text-sm font-Outift">Hey there, I'm a self-taught front-end developer. As a web developer, I preferred to concentrate on the design and user experience of a website or other projects while using the tools and abilities that I had learned. My objective is to succeed and gain more knowledge of responsive web design and development.</p>
     </div>
     <strong class="text-lg material-symbols-outlined">Technology</strong>
-  <div class="flex justify-center space-x-11">
-<div><img src="/dist/logo/git.png" class="w-20 h-20 object-contain flex-nowrap"><p class="text-center">GIT</p></div>
-<div><p class="text-center">Github</p><img src="/dist/logo/github.png" class="w-20 h-20 object-contain flex-nowrap"></div>
-<div><img src="/dist/logo/html.png" class="w-20 h-20 object-contain flex-nowrap"></div>
-<div><img src="/dist/logo/JS.png" class="w-20 h-20 object-contain flex-nowrap"></div>
-<div><img src="/dist/logo/react.png" class="w-20 h-20 object-contain "></div>
-<div><img src="/dist/logo/tailwind.svg" class="w-20 h-20 object-contain flex-nowrap"></div>
+  <div class="flex justify-center space-x-20">
+<div><img src="/dist/logo/git.png" class="w-10 h-10 object-contain flex-nowrap"><p class="text-center">GIT</p></div>
+<div><p class="text-center">Github</p><img src="/dist/logo/github.png" class="w-10 h-10 object-contain flex-nowrap"></div>
+<div><img src="/dist/logo/html.png" class="w-10 h-10 object-contain flex-nowrap"></div>
+<div><img src="/dist/logo/JS.png" class="w-10 h-10 object-contain flex-nowrap"></div>
+<div><img src="/dist/logo/react.png" class="w-10 h-10 object-contain "></div>
+<div><img src="/dist/logo/tailwind.svg" class="w-10 h-10 object-contain flex-nowrap"></div>
   </div>
   </section>    
   
   <div><strong class="text-lg material-symbols-outlined ">Projects</strong></div>
 <section class="grid place-content-start">
-    <div class=" w-[200px] h-[200px] m-[50px] pt-[75px] bg-[#ccc] items-center text-[#fff] text-3xl" data-aos="fade-right">Project 1</div>
+    <div class="object-contain m-[50px] pt-[75px] items-center text-[#fff] text-3xl" data-aos="fade-right"><img src="/dist/Logo/Portfolio.PNG" alt=""></div>
     <div class=" w-[200px] h-[200px] m-[50px] pt-[75px] bg-[#ccc] items-center text-[#fff] text-sm" data-aos="fade-right">Project 2</div>
     <div class="item w-[200px] h-[200px] m-[50px] pt-[75px] bg-[#ccc] items-center text-[#fff] text-sm" data-aos="fade-right">Project 3</div>
     <div class="item w-[200px] h-[200px] m-[50px] pt-[75px] bg-[#ccc] items-center text-[#fff] text-sm" data-aos="fade-right">Project 4</div>
 </section>
 
 
-<div id="item1" class="hidden">Item 1 (Click to show)</div>
-<div id="item2">Item 2 (Click to hide)</div>
-<button onclick="toggleItems()">Toggle</button>
 
 <section>
   <div><strong class="text-lg material-symbols-outlined">Contact Me</strong></div>

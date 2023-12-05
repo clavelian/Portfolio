@@ -1,6 +1,6 @@
 function toggleItems() {
-  var item1 = document.getElementById("item1");
-  var item2 = document.getElementById("item2");
+  let item1 = document.getElementById("item1");
+  let item2 = document.getElementById("item2");
 
   if (item1.classList.contains("hidden")) {
     // Show item1 and hide item2
